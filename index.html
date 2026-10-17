@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio — Aliffiarsa</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+       HERO SECTION DENGAN SPOTLIGHT
+    ============================================================ -->
+    <div class="hero-section">
+      <!-- Bintang-bintang kecil -->
+      <div class="stars"></div>
+
+      <!-- HEADER -->
+      <header>
+        <nav class="nav">
+          <div class="logo">
+            <span class="logo-mark">A</span>
+            <span>Aliffiarsa</span>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#skill">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a href="#kontak" class="nav-btn">Hubungi</a>
+            <a href="#kontak" class="nav-btn nav-btn-primary">Mulai Proyek</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HERO CONTENT -->
+      <section class="hero" id="profil">
+        <!-- Badge gaya referensi: tag + teks + arrow -->
+        <a href="#proyek" class="badge reveal">
+          <span class="badge-tag">BARU</span>
+          <span>Lihat proyek terbaru saya</span>
+          <span class="arrow">→</span>
+        </a>
+
+        <!-- Avatar inline -->
+        <div class="avatar-inline reveal d1">
+          <div
+            class="avatar-illustration"
+            role="img"
+            aria-label="Ilustrasi avatar Aliffiarsa"
+          >
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#4f46e5" />
+                  <stop offset="100%" stop-color="#7c3aed" />
+                </linearGradient>
+                <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1e1b4b" />
+                  <stop offset="100%" stop-color="#0a0e1f" />
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="100" fill="url(#g2)" />
+              <path
+                d="M40 200 Q40 145 100 145 Q160 145 160 200 Z"
+                fill="url(#g1)"
+              />
+              <rect
+                x="88"
+                y="115"
+                width="24"
+                height="30"
+                rx="10"
+                fill="#e8c9a0"
+              />
+              <circle cx="100" cy="90" r="38" fill="#f0d5b0" />
+              <path
+                d="M62 88 Q62 45 100 45 Q138 45 138 88 Q138 70 120 66 Q100 62 80 66 Q62 70 62 88 Z"
+                fill="#1e1b4b"
+              />
+              <path d="M62 88 Q60 75 68 68 L72 80 Z" fill="#1e1b4b" />
+              <path d="M138 88 Q140 75 132 68 L128 80 Z" fill="#1e1b4b" />
+              <circle cx="86" cy="90" r="4" fill="#0f172a" />
+              <circle cx="114" cy="90" r="4" fill="#0f172a" />
+              <path
+                d="M88 104 Q100 114 112 104"
+                stroke="#0f172a"
+                stroke-width="3"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="86"
+                cy="90"
+                r="9"
+                fill="none"
+                stroke="#93c5fd"
+                stroke-width="2.5"
+              />
+              <circle
+                cx="114"
+                cy="90"
+                r="9"
+                fill="none"
+                stroke="#93c5fd"
+                stroke-width="2.5"
+              />
+              <line
+                x1="95"
+                y1="90"
+                x2="105"
+                y2="90"
+                stroke="#93c5fd"
+                stroke-width="2.5"
+              />
+              <circle cx="75" cy="100" r="4" fill="#f0a0b0" opacity="0.6" />
+              <circle cx="125" cy="100" r="4" fill="#f0a0b0" opacity="0.6" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Judul hero: baris 1 sans, baris 2 italic seperti referensi -->
+        <h1 class="reveal d2">
+          Halo, saya <span class="gradient">Aliffiarsa</span>,<br />
+          <span class="italic">creative front-end developer</span>
+        </h1>
+
+        <p class="subtitle reveal d3" id="deskripsi">
+          Saya membangun antarmuka web yang bersih, responsif, dan berfokus pada
+          pengalaman pengguna. Senang belajar teknologi baru dan berbagi ilmu
+          dengan komunitas.
+        </p>
+
+        <div class="aksi reveal d4">
+          <button class="btn btn-primary" id="btnUbahTeks">Ubah Teks</button>
+          <button class="btn" id="btnGantiTema">Ganti Tema</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ END HERO SECTION ============ -->
+
+    <main class="container">
+
+      <!-- SKILL -->
+      <section class="section" id="skill">
+        <div class="section-head reveal">
+          <h2>Keterampilan</h2>
+          <p>Beberapa hal yang saya tekuni setiap hari</p>
+        </div>
+
+        <div class="kartu-grid">
+          <div class="kartu reveal">
+            <div class="ikon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+              Membangun website modern dengan HTML, CSS, JavaScript, dan React.
+            </p>
+          </div>
+
+          <div class="kartu reveal d1">
+            <div class="ikon">🎨</div>
+            <h3>Desain UI/UX</h3>
+            <p>Merancang antarmuka yang menarik, bersih, dan mudah dipakai.</p>
+          </div>
+
+          <div class="kartu reveal d2">
+            <div class="ikon">📱</div>
+            <h3>Mobile First</h3>
+            <p>
+              Mengutamakan tampilan mobile agar nyaman di semua ukuran layar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PENGALAMAN -->
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Pengalaman</h2>
+          <p>Perjalanan karier saya sejauh ini</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="tahun">Juli 2025 - Oktober 2025</div>
+            <h4>Graphic Design Internship · PT, Diwangsa Nyala Kreatif</h4>
+            <p>
+                Berkolaborasi dengan tim kreatif dan marketing dalam mengembangkan konsep visual
+                untuk berbagai acara.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal d1">
+            <div class="tahun">Juni 2023 - Desember 2023</div>
+            <h4>Marketing Communication Internship · Suara Merdeka Network</h4>
+            <p>
+                Berkontribusi dalam pembuatan konten digital berupa feed instagram, story instagram
+                dan infografis untuk sebuah berita nasional 
+            </p>
+          </div>
+
+          <div class="timeline-item reveal d2">
+            <div class="tahun">2023</div>
+            <h4>Staff Design dan Dokumentasi · Snapan Developer Team</h4>
+            <p>
+              Mengerjakan berbagai proyek desain dan dokumentasi ekstrakulikuler.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYEK -->
+      <section class="section" id="proyek">
+        <div class="section-head reveal">
+          <h2>Proyek Pilihan</h2>
+          <p>Beberapa karya yang saya banggakan</p>
+        </div>
+
+        <div class="proyek-grid">
+          <div class="proyek reveal">
+            <div class="proyek-banner">
+                <img src="./img/image.png" alt="woi" style="height: 130px;">
+            </div>
+
+            <div class="proyek-body">
+              <h3>Website Portofolio</h3>
+              <p>
+                Platform belanja online dengan keranjang, pembayaran, dan
+                dashboard admin.
+              </p>
+
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="proyek reveal d1">
+            <div class="proyek-banner">📊</div>
+
+            <div class="proyek-body">
+              <h3>Dashboard Analitik</h3>
+              <p>
+                Dashboard interaktif untuk visualisasi data penjualan secara
+                real-time.
+              </p>
+
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">PHP</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="proyek reveal d2">
+            <div class="proyek-banner">📝</div>
+
+            <div class="proyek-body">
+              <h3>Aplikasi Catatan</h3>
+              <p>
+                Aplikasi pencatat ringan dengan sinkronisasi cloud dan mode
+                offline.
+              </p>
+
+              <div class="tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- KONTAK -->
+      <section class="section" id="kontak">
+        <div class="kontak-box reveal">
+          <h2>Mari Bekerja Sama</h2>
+          <p>Punya ide proyek? Saya siap membantu mewujudkannya.</p>
+
+          <div class="aksi">
+            <a class="btn btn-primary" href="mailto:aliffiarsa.33@gmail.com"
+              >Kirim Email</a
+            >
+            <a class="btn" href="#profil">Lihat Profil</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Aliffiarsa — Dibuat dengan HTML, CSS &amp; JavaScript.
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
